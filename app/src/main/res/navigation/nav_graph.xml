@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.employeedirectory.fragments.DashboardFragment"
+        android:label="Dashboard" />
+    <fragment
+        android:id="@+id/employeeListFragment"
+        android:name="com.example.employeedirectory.fragments.EmployeeListFragment"
+        android:label="Employees" />
+    <fragment
+        android:id="@+id/departmentsFragment"
+        android:name="com.example.employeedirectory.fragments.DepartmentsFragment"
+        android:label="Departments" />
+    <fragment
+        android:id="@+id/contactFragment"
+        android:name="com.example.employeedirectory.fragments.ContactFragment"
+        android:label="Contact" />
+</navigation>
