@@ -14,7 +14,7 @@ class DepartmentsFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View {
         val list = EmployeeData.employees.groupBy { it.department }
-            .map { "${it.key}: ${it.value.size} employees" }
+            .map { "${it.key}: ${it.value.size} ${if (it.value.size == 1) "employee" else "employees"}" }
             .joinToString("\n")
         return TextView(requireContext()).apply {
             text = "Departments\n\n$list"
